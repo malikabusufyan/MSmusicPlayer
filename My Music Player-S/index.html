@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <script src="https://kit.fontawesome.com/f9afaa8246.js" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>MS🎶 Player</title>
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <div id="music-player-tag">
+      <div id="music-player-logo">
+        <img src="Images/NavImages/Spotify log.jpg" alt="">
+      </div>
+      <div id="music-player-name">
+        MS 🎶<br /><b>Player</b>
+      </div>
+    </div>
+    <div id="fav">
+      <p>Favourites</p>
+    </div>
+    <div id="playlist">
+      <a href="SecondPage.html" target="_blank">Playlist</a>
+    </div>
+    <div id="search-bar-utility">
+      <div id="search-bar">
+        <form>
+          <input type="text" placeholder="Search...">
+          <i class="fas fa-search"></i>
+        </form>
+      </div>
+      <div id="notifications">
+        <i class="fas fa-bell"></i>
+      </div>
+      <div id="user">
+        <img src="Images/NavImages/Profile Pic.png" alt="">
+      </div>
+    </div>
+  </nav>
+  <!--End of navigation bar section-->
+  <main>
+    <!--Home Screen Carousel which is slideshown with class slideshow-->
+    <div class="scrollbar">
+      <div id="new-releases">
+        <img src="Images/CarouselImage/third images.jpg" alt="">
+        <img src="Images/CarouselImage/Second Image.jpg" alt="">
+        <img src="Images/CarouselImage/First Image.jpg" alt="">
+      </div>
+      <!--End of home screen carousel-->
+      <!-- Latest Release Section -->
+      <div id="latest-release">
+        <h1>Latest Release</h1>
+        <div id="latest-release-items">
+          <div id="latest-release-item">
+            <div id="latest-release-img">
+              <div id="latest-release-img-button" class="hide">
+                <a href="#music-bar" class="font-color"><i class="fas fa-play"></i></a>
+              </div>
+            </div>
+            <div id="latest-item-title" class="hide">
+              <b>Flowers</b>
+              <p style="color:lightgrey">December, 2022 &emsp;&emsp; 3:34</p>
+            </div>
+            <!--Dropdown menu icon-->
+            <div id="dropdown">
+              <i class="fas fa-chevron-circle-down">
+                <div id="dropdown-menu" class="hide">
+                  <div id="dropdown-list">
+                    <i class="fas fa-play"></i>
+                    &nbsp;
+                    <a href="#music-bar">Play Now</a>
+                  </div>
+                  <hr />
+                  <div id="dropdown-list">
+                    <i class="fas fa-plus"></i>
+                    &nbsp;
+                    <a href="#latest-release">Add to Queue</a>
+                  </div>
+                  <hr />
+                  <div id="dropdown-list">
+                    <i class="fas fa-plus"></i>
+                    &nbsp;
+                    <a href="#latest-release">Add to Favourites</a>
+                  </div>
+                  <hr />
+                </div>
+              </i>
+            </div>
+            <!--End of dropdown menu-->
+          </div>
+          <div id="latest-release-item">
+            <div id="latest-release-img1">
+              <div id="latest-release-img-button" class="hide">
+                <a href="#music-bar" class="font-color"><i class="fas fa-play"></i></a>
+              </div>
+            </div>
+            <div id="latest-item-title">
+              <b>Ghodey pe Sawar (Amit Trivedi)</b>
+              <p style="color:lightgrey">November, 2022 &emsp;&emsp;&emsp; 5:04</p>
+            </div>
+            <!--Dropdown menu icon-->
+            <div id="dropdown">
+              <i class="fas fa-chevron-circle-down">
+                <div id="dropdown-menu" class="hide">
+                  <div id="dropdown-list">
+                    <i class="fas fa-play"></i>
+                    &nbsp;
+                    <a href="#music-bar">Play Now</a>
+                  </div>
+                  <hr />
+                  <div id="dropdown-list">
+                    <i class="fas fa-plus"></i>
+                    &nbsp;
+                    <a href="#latest-release">Add to Queue</a>
+                  </div>
+                  <hr />
+                  <div id="dropdown-list">
+                    <i class="fas fa-plus"></i>
+                    &nbsp;
+                    <a href="#latest-release">Add to Favourites</a>
+                  </div>
+                </div>
+              </i>
+            </div>
+            <!--End of dropdown menu-->
+          </div>
+          <div id="latest-release-item">
+            <div id="latest-release-img2">
+              <div id="latest-release-img-button" class="hide">
+                <a href="#music-bar" class="font-color"><i class="fas fa-play"></i></a>
+              </div>
+            </div>
+            <div id="latest-item-title">
+              <b>Kismat (Diljit Dosanjh) </b>
+              <p style="color:lightgrey">December, 2022 &emsp;&emsp; 4:20</p>
+            </div>
+            <!--Dropdown menu icon-->
+            <div id="dropdown">
+              <i class="fas fa-chevron-circle-down">
+                <div id="dropdown-menu" class="hide">
+                  <div id="dropdown-list">
+                    <i class="fas fa-play"></i>
+                    &nbsp;
+                    <a href="#music-bar">Play Now</a>
+                  </div>
+                  <hr />
+                  <div id="dropdown-list">
+                    <i class="fas fa-plus"></i>
+                    &nbsp;
+                    <a href="#latest-release">Add to Queue</a>
+                  </div>
+                  <hr />
+                  <div id="dropdown-list">
+                    <i class="fas fa-plus"></i>
+                    &nbsp;
+                    <a href="#latest-release">Add to Favourites</a>
+                  </div>
+                </div>
+              </i>
+            </div>
+            <!--End of dropdown menu-->
+          </div>
+          <div id="latest-release-item">
+            <div id="latest-release-img3">
+              <div id="latest-release-img-button" class="hide">
+                <a href="#music-bar" class="font-color"><i class="fas fa-play"></i></a>
+              </div>
+            </div>
+            <div id="latest-item-title">
+              <b>Colors (Enrique Iglesias)</b>
+              <p style="color:lightgrey">June, 2022 &emsp;&emsp;&emsp;&emsp;&emsp; 5:15</p>
+            </div>
+            <!--Dropdown menu icon-->
+            <div id="dropdown">
+              <i class="fas fa-chevron-circle-down">
+                <div id="dropdown-menu" class="hide">
+                  <div id="dropdown-list">
+                    <i class="fas fa-play"></i>
+                    &nbsp;
+                    <a href="#music-bar">Play Now</a>
+                  </div>
+                  <hr />
+                  <div id="dropdown-list">
+                    <i class="fas fa-plus"></i>
+                    &nbsp;
+                    <a href="#latest-release">Add to Queue</a>
+                  </div>
+                  <hr />
+                  <div id="dropdown-list">
+                    <i class="fas fa-plus"></i>
+                    &nbsp;
+                    <a hrf="#latest-release">Add to Favourites</a>
+                  </div>
+                </div>
+              </i>
+            </div>
+            <!--End of dropdown menu-->
+          </div>
+        </div>
+      </div>
+      <!-- End of Latest Release Section -->
+
+      <!--Begining of Popular Artists section-->
+      <div id="popular-artists">
+        <h1>Popular Artists</h1>
+        <div id="popular-artist-list">
+          <div id="popular-artists-image">
+            <div id="popular-artists-text" class="hide">
+              <a href="MusicPlayerSinglePlaylistScreen.html">
+                Nusrat FA Khan
+              </a>
+            </div>
+          </div>
+          <div id="popular-artists-image-2">
+            <div id="popular-artists-text" class="hide">
+              <a href="MusicPlayerSinglePlaylistScreen.html">
+                Jagjit Singh
+              </a>
+            </div>
+          </div>
+          <div id="popular-artists-image-3">
+            <div id="popular-artists-text" class="hide">
+              <a href="MusicPlayerSinglePlaylistScreen.html">
+                Ritviz
+              </a>
+            </div>
+          </div>
+          <div id="popular-artists-image-4">
+            <div id="popular-artists-text" class="hide">
+              <a href="MusicPlayerSinglePlaylistScreen.html">
+                Taylor Swift
+              </a>
+            </div>
+          </div>
+          <div id="popular-artists-image-5">
+            <div id="popular-artists-text" class="hide">
+              <a href="MusicPlayerSinglePlaylistScreen.html">
+                Arijit Singh
+              </a>
+            </div>
+          </div>
+          <div id="popular-artists-image-6">
+            <div id="popular-artists-text" class="hide">
+              <a href="MusicPlayerSinglePlaylistScreen.html">
+                Atif Aslam
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--End of popluar artist section-->
+
+      <!-- Music Station -->
+      <div class="music-genre-section">
+        <div class="themes">
+          <div class="stations">
+            <div id="purple1">
+              <div id="purple2">
+                <div id="purple3">
+                  <img src="Images/MusicStation/Station.jpg">
+                  <p>Stations</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tmain">
+            <div class="tcontent">
+              <img src="Images/MusicStation/vibe.jpg" alt="">
+              <p>Vibe</p>
+            </div>
+            <div class="tcontent">
+              <img src="Images/MusicStation/Rock.jpg" alt="">
+              <p>Rock</p>
+            </div>
+            <div class="tcontent">
+              <img src="Images/MusicStation/love.jpg" alt="">
+              <p>Love</p>
+            </div>
+            <div class="tcontent">
+              <img src="Images/MusicStation/pop.jpg" alt="">
+              <p>Pop</p>
+            </div>
+            <div class="tcontent">
+              <img src="Images/MusicStation/retro.jpg" alt="">
+              <p>Retro</p>
+            </div>
+            <div class=" tcontent">
+              <img src="Images/MusicStation/gym.jpg" alt="">
+              <p>GYM</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Music Station End -->
+      <!--genre section-->
+      <div id="genre">
+        <div id="genre-item">
+          <div id="genre-item-background-1">Party</div>
+        </div>
+        <div id="genre-item">
+          <div id="genre-item-background-2">Electronic</div>
+        </div>
+        <div id="genre-item">
+          <div id="genre-item-background-3">Road Trips</div>
+        </div>
+      </div>
+      <!--End of genre section-->
+      <!-- LatestSongs -->
+      <!-- Latest Hindi Songs -->
+      <div class="latestHindiSection">
+        <h3>Latest Hindi</h3>
+        <div class="latest-container">
+          <div class="song-container">
+            <div class="song-card">
+              <img src="Images/LatestHindiSong/piya rey.jpg" alt="Piya re">
+            </div>
+            <div class="song-name">
+              <h6>Piya Re</h6>
+            </div>
+          </div>
+          <div class="song-container">
+            <div class="song-card">
+              <img src="Images/LatestHindiSong/Sohnneyaa.jpg" alt="">
+            </div>
+            <div class="song-name">
+              <h6>Sohnneyaa</h6>
+            </div>
+          </div>
+          <div class="song-container">
+            <div class="song-card">
+              <img src="Images/LatestHindiSong/Masooiyat.jfif" alt="">
+            </div>
+            <div class="song-name">
+              <h6>Masoomiyat</h6>
+            </div>
+          </div>
+          <div class="song-container">
+            <div class="song-card">
+              <img src="Images/LatestHindiSong/Mahi mera dil.jpg" alt="">
+            </div>
+            <div class="song-name">
+              <h6>Mahi Mera Dil</h6>
+            </div>
+          </div>
+          <div class="song-container">
+            <div class="song-card">
+              <img src="Images/LatestHindiSong/dancekabhoot.jpg" alt="">
+            </div>
+            <div class="song-name">
+              <h6>Dance Ka Bhoot</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of Latest Hindi Song -->
+      <!-- Lates English Songs  -->
+      <div class="latestEnglishSection">
+        <h3>Latest English</h3>
+        <div class="latest-container">
+          <div class="song-container">
+            <div class="song-card">
+              <img src="Images/LatestEnglishSong/Karma.jpg" alt="">
+            </div>
+            <div class="song-name">
+              <h6>Karma</h6>
+            </div>
+          </div>
+          <div class="song-container">
+            <div class="song-card">
+              <img src="Images/LatestEnglishSong/nothing else matters.jpg" alt="">
+            </div>
+            <div class="song-name">
+              <h6>Nothing Else Matters</h6>
+            </div>
+          </div>
+          <div class="song-container">
+            <div class="song-card">
+              <img src="Images/LatestEnglishSong/Happier than ever.jpg" alt="">
+            </div>
+            <div class="song-name">
+              <h6>Happier Than Ever</h6>
+            </div>
+          </div>
+          <div class="song-container">
+            <div class="song-card">
+              <img src="Images/LatestEnglishSong/Ghost.jpg" alt="">
+            </div>
+            <div class="song-name">
+              <h6>Ghost</h6>
+            </div>
+          </div>
+          <div class="song-container">
+            <div class="song-card">
+              <img src="Images/LatestEnglishSong/Sweetest Pie.jpg" alt="">
+            </div>
+            <div class="song-name">
+              <h6>Sweetest Pie</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of Latest English Song -->
+    </div>
+  </main>
+  <!-- Aside Section -->
+  <aside>
+    <div id="aside-header">
+      <div id="aside-title">Queue</div>
+      <div id="aside-dropdown">
+        <form>
+          <select>
+            <option id="Queue" label="Queue">Queue</option>
+            <option id="Playlist" lable="Playlist"><a href="MusicPlayerHomePage2.html">Playlist</a></option>
+          </select>
+        </form>
+      </div>
+    </div>
+    <div class="scrollbar">
+      <div id="queue-item">
+        <div id="queue-item-img1"></div>
+        <div id="queue-item-title">
+          <b>After Hours</b>
+          <p style="color:lightgrey;">The Weekend</p>
+        </div>
+        <div id="queue-favourite">
+          <i class="far fa-heart"></i>
+        </div>
+      </div>
+      <div id="queue-item">
+        <div id="queue-item-img2"></div>
+        <div id="queue-item-title">
+          <b>Bones</b>
+          <p style="color:lightgrey;">Imagine Dragons</p>
+        </div>
+        <div id="queue-favourite">
+          <i class="far fa-heart"></i>
+        </div>
+      </div>
+      <div id="queue-item">
+        <div id="queue-item-img3"></div>
+        <div id="queue-item-title">
+          <b>Calm Down</b>
+          <p style="color:lightgrey;">Selena Gomez & Rema</p>
+        </div>
+        <div id="queue-favourite">
+          <i class="far fa-heart"></i>
+        </div>
+      </div>
+      <div id="queue-item">
+        <div id="queue-item-img4"></div>
+        <div id="queue-item-title">
+          <b>Dandelions</b>
+          <p style="color:lightgrey;">Ruth B.</p>
+        </div>
+        <div id="queue-favourite">
+          <i class="far fa-heart"></i>
+        </div>
+      </div>
+      <div id="queue-item">
+        <div id="queue-item-img5"></div>
+        <div id="queue-item-title">
+          <b>Evovle</b>
+          <p style="color:lightgrey;">Imagine Dragons</p>
+        </div>
+        <div id="queue-favourite">
+          <i class="far fa-heart"></i>
+        </div>
+      </div>
+      <div id="queue-item">
+        <div id="queue-item-img6"></div>
+        <div id="queue-item-title">
+          <b>Feel for You</b>
+          <p style="color:lightgrey;">Chaka Khan</p>
+        </div>
+        <div id="queue-favourite">
+          <i class="far fa-heart"></i>
+        </div>
+      </div>
+      <div id="queue-item">
+        <div id="queue-item-img7"></div>
+        <div id="queue-item-title">
+          <b>Flowers</b>
+          <p style="color:lightgrey;">Miley Cyrus</p>
+        </div>
+        <div id="queue-favourite">
+          <i class="far fa-heart"></i>
+        </div>
+      </div>
+      <div id="queue-item">
+        <div id="queue-item-img8"></div>
+        <div id="queue-item-title">
+          <b>Hary's House</b>
+          <p style="color:lightgrey;">Harry Styles</p>
+        </div>
+        <div id="queue-favourite">
+          <i class="far fa-heart"></i>
+        </div>
+      </div>
+      <div id="queue-item">
+        <div id="queue-item-img9"></div>
+        <div id="queue-item-title">
+          <b>Top Gun</b>
+          <p style="color:lightgrey;">One Republic</p>
+        </div>
+        <div id="queue-favourite">
+          <i class="far fa-heart"></i>
+        </div>
+      </div>
+      <div id="queue-item">
+        <div id="queue-item-img10"></div>
+        <div id="queue-item-title">
+          <b>Unholy</b>
+          <p style="color:lightgrey;">Sam Smith & Kim Petras</p>
+        </div>
+        <div id="queue-favourite">
+          <i class="far fa-heart"></i>
+        </div>
+      </div>
+      <div id="queue-item">
+        <div id="queue-item-img11"></div>
+        <div id="queue-item-title">
+          <b>Unstoppable</b>
+          <p style="color:lightgrey;">Sia</p>
+        </div>
+        <div id="queue-favourite">
+          <i class="far fa-heart"></i>
+        </div>
+      </div>
+    </div>
+  </aside>
+  <!-- End of Aside Section -->
+  <!-- Footer -->
+  <footer>
+    <div class="activesong">
+      <div id="sgimg">
+        <img src="Images/Footer/images.jpg" alt="image">
+      </div>
+      <div class="sgdesc">
+        <div>
+          Unstoppable
+        </div>
+      </div>
+      <div class="fticon">
+        <span>
+          <i class="far fa-heart"></i>
+        </span>
+      </div>
+    </div>
+    <div class="player">
+      <audio controls>
+        <source src="Images/Footer/Unstoppable.mp3" type="audio/mp3">
+      </audio>
+    </div>
+    <div class="ext">
+      <div><i class="fas fa-ban"></i></div>
+      <div> <i class="fas fa-list-ul"></i></div>
+      <div><i class="fa fa-music"></i></div>
+      <div><i class="fas fa-random"></i></div>
+      <div><i class="fas fa-redo"></i></div>
+    </div>
+  </footer>
+  <!-- End of Footer -->
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+    crossorigin="anonymous"></script>
+</body>
+<script src="script.js"></script>
+
+</html>

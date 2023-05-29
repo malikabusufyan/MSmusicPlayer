@@ -1,6 +1,6 @@
 # MSmusicPlayer
 
-The <nav> element represents the navigation bar section at the top of the page.
+The nav element represents the navigation bar section at the top of the page.
 It includes a logo and the name of the music player.
 It also contains links for "Favourites" and "Playlist".
 A search bar, notifications icon, and user profile image are included as well.

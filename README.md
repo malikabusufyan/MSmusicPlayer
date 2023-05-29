@@ -14,4 +14,4 @@ The "Genre" section displays different music genres.
 The "LatestSongs" section includes separate sections for the latest Hindi and English songs.
 Within each section, there are specific HTML elements for images, titles, and other content related to the respective section.
     
-    ![image](https://github.com/malikabusufyan/MSmusicPlayer/assets/118253617/51bf151e-1354-4cde-adbf-8e78f82fdd61)
+   
